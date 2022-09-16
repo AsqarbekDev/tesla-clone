@@ -8,24 +8,24 @@ function Header() {
 
   return (
     <Container>
-      <a href="#">
+      <div>
         <Logo
           src="https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Wordmark-Black-Logo.wine.svg"
           alt="Tesla"
         />
-      </a>
+      </div>
       <Menu>
-        <a href="#">Model S</a>
+        <p>Model S</p>
 
-        <a href="#">Model 3</a>
+        <p>Model 3</p>
 
-        <a href="#">Model X</a>
+        <p>Model X</p>
 
-        <a href="#">Model Y</a>
+        <p>Model Y</p>
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <p>Shop</p>
+        <p>Tesla Account</p>
         <CustomMenu onClick={() => SetBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -33,37 +33,37 @@ function Header() {
           <CustomClose onClick={() => SetBurgerStatus(false)} />
         </CloseWrapper>
         <li>
-          <a href="#">EXISTING INVENTORY</a>
+          <p>EXISTING INVENTORY</p>
         </li>
         <li>
-          <a href="#">USED INVENTORY</a>
+          <p>USED INVENTORY</p>
         </li>
         <li>
-          <a href="#">TRADE-IN</a>
+          <p>TRADE-IN</p>
         </li>
         <li>
-          <a href="#">CYBERTRUCK</a>
+          <p>CYBERTRUCK</p>
         </li>
         <li>
-          <a href="#">ROADSTER</a>
+          <p>ROADSTER</p>
         </li>
         <li>
-          <a href="#">SEMI</a>
+          <p>SEMI</p>
         </li>
         <li>
-          <a href="#">CHARGING</a>
+          <p>CHARGING</p>
         </li>
         <li>
-          <a href="#">POWERWALL</a>
+          <p>POWERWALL</p>
         </li>
         <li>
-          <a href="#">COMMERCIAL ENERGY</a>
+          <p>COMMERCIAL ENERGY</p>
         </li>
         <li>
-          <a href="#">UTILITIES</a>
+          <p>UTILITIES</p>
         </li>
         <li>
-          <a href="#">TEST DRIVE</a>
+          <p>TEST DRIVE</p>
         </li>
       </BurgerNav>
     </Container>
@@ -98,7 +98,7 @@ const Menu = styled.div`
   justify-content: center;
   margin-top: -13px;
 
-  a {
+  p {
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 10px;
@@ -115,7 +115,7 @@ const RightMenu = styled.div`
   align-items: center;
   margin-top: -13px;
 
-  a {
+  p {
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 10px;
@@ -144,7 +144,7 @@ const BurgerNav = styled.div`
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
-    a {
+    p {
       font-weight: 600;
     }
   }
